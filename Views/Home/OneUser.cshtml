@@ -1,0 +1,11 @@
+
+@model List<Usuario>
+<div class="text-center">
+    <h1 class="display-4">Esto es un Usuario</h1>
+    
+    @{Random ran = new Random();
+     int valor = ran.Next(1,4);
+    }
+    @Model[valor].Nombre @Model[valor].Apellido
+
+</div>
